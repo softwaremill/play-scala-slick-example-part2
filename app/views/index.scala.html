@@ -5,6 +5,9 @@
 @request.flash.get("success").map { key =>
    @request.messages(key)
 }
+@request.flash.get("error").map { key =>
+   @request.messages(key)
+}
 
 @main("Welcome to Play") {
   @form(routes.PersonController.addPerson()) {

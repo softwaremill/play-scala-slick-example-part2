@@ -55,6 +55,8 @@ class PersonController(personService: PersonService[IO],
         personService.createPerson(Person(None, person.name, person.age)).map { _ =>
           // If successful, we simply redirect to the index page.
           Redirect(routes.PersonController.index).flashing("success" -> "user.created")
+        }.handleErrorWith { e =>
+          IO.pure(Redirect(routes.PersonController.index).flashing("error" -> e.getMessage))
         }
       }
     )
