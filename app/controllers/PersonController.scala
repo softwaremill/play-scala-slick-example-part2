@@ -15,9 +15,9 @@ import scala.concurrent.ExecutionContext
 
 
 class PersonController(personService: PersonService[IO],
-                       cc: MessagesControllerComponents
+                       messagesControllerComponents: MessagesControllerComponents
                       )(implicit ec: ExecutionContext)
-  extends MessagesAbstractController(cc) {
+  extends MessagesAbstractController(messagesControllerComponents) {
 
   /**
     * The mapping for the person form.
