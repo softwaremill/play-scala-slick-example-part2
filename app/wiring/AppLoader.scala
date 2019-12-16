@@ -10,5 +10,4 @@ class AppLoader extends ApplicationLoader {
     appComponents.applicationEvolutions //run the evolutions
     appComponents.application
   }
-
 }

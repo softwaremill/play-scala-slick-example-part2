@@ -1,7 +1,7 @@
-# Towards More Functional Play - Part 1
+# Towards More Functional Play - Part 2
 
-This repository contains the modified `play-scala-slick-example` according to the blog post
-here: https://medium.com/p/a97bc4d92c76/edit
+This repository contains the modified `play-scala-slick-example-part2` according to the blog post
+here: https://medium.com/p/ac20d02bb2f5/edit
 
 # play-scala-slick-example
 
