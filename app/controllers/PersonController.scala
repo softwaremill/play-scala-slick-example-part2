@@ -14,7 +14,7 @@ import services.PersonService
 import scala.concurrent.ExecutionContext
 
 
-class PersonController[(personService: PersonService[IO],
+class PersonController(personService: PersonService[IO],
                        messagesControllerComponents: MessagesControllerComponents
                       )(implicit ec: ExecutionContext)
   extends MessagesAbstractController(messagesControllerComponents) {
